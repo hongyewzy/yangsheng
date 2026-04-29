@@ -1,5 +1,5 @@
 {
-  "apiUrl": "https://maas-coding-api.cn-huabei-1.xf-yun.com/v2/chat/completions",
+  "apiUrl": "XXX",
   "apiKey": "XXX",
-  "model": "astron-code-latest"
+  "model": "XXX"
 }
