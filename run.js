@@ -65,7 +65,9 @@ async function main() {
     mkdirSync(outputDir, { recursive: true });
 
     // 4. 根据文章内容生成对应图片
-    const imageResults = await generateArticleImages(selectedTopic, articleContent, outputDir);
+    // 如果 imageApiKey 未设置，使用 apiKey（统一使用 ModelScope）
+    const imageApiKey = config.imageApiKey || config.apiKey;
+    const imageResults = await generateArticleImages(selectedTopic, articleContent, outputDir, imageApiKey);
 
     // 5. 格式化为 HTML（嵌入 Base64 图片）
     console.log('🎨 正在生成HTML...\n');

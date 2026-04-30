@@ -1,5 +1,6 @@
 {
-  "apiUrl": "XXX",
-  "apiKey": "XXX",
-  "model": "XXX"
+  "apiUrl": "https://api-inference.modelscope.cn/v1/chat/completions",
+  "apiKey": "你的ModelScope访问令牌",
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "imageApiKey": "你的ModelScope访问令牌"
 }
